@@ -13,15 +13,14 @@ export const HoverEffect = ({ items, className }) => {
         className
       )}
     >
-      {items.map((item, idx) => (
-        <Link
-          to={item && item.link}
-          key={item && item.link}
-          className="relative group block p-2 h-full w-full"
-          onMouseEnter={() => setHoveredIndex(idx)}
-          onMouseLeave={() => setHoveredIndex(null)}
-        >
-          <AnimatePresence>
+{items.map((item, idx) => (
+  <Link
+    to={item && item.link}
+    key={item && item.id} // Assuming items have unique IDs
+    className="relative group block p-2 h-full w-full"
+    onMouseEnter={() => setHoveredIndex(idx)}
+    onMouseLeave={() => setHoveredIndex(null)}
+  >          <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
                 className="absolute inset-0 h-full w-auto bg-neutral-200 dark:bg-slate-100/[0.8] block rounded-3xl"

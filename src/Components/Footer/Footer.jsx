@@ -22,8 +22,8 @@ const Footer = () => {
           </div>
           <div className="border-t border-gray-700 my-6"></div>
           <div className="flex flex-col md:flex-row justify-between items-center text-gray-400">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
-            <p>Designed & Built by Your Name</p>
+            <p>&copy; 2024 Gaurav Devrani All rights reserved.</p>
+            <p>Designed & Built by Gaurav Devrani</p>
           </div>
         </div>
       </footer>
