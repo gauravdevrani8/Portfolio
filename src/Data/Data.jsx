@@ -119,8 +119,8 @@ import { SiFirebase, SiFigma, SiWebpack, SiMongodb } from "react-icons/si";
         "React",
         "Tailwind",
       ],
-      github: "https://github.com/gauravdevrani8/LuxeLoom-e-commerce-website/tree/main",
-      webapp: "https://luxe-loom.vercel.app/",
+      github: "https://github.com/gauravdevrani8/Portfolio",
+      webapp: "https://portfolio-peach-ten-11.vercel.app/",
     },
 
   ];
