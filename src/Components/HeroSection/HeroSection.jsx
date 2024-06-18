@@ -4,7 +4,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import Lottie from 'lottie-react';
 import lottieAnimation from '../../assets/Animation.json'; // Ensure the path is correct
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
-import resume from '../../Data/resume.pdf'; // Correct the import statement
+import resume from '../../Data/Resume.pdf'; // Correct the import statement
 import { MdFileDownload } from "react-icons/md";
 
 const HeroSection = () => {

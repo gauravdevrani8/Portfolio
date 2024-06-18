@@ -118,9 +118,25 @@ import { SiFirebase, SiFigma, SiWebpack, SiMongodb } from "react-icons/si";
       tags: [
         "React",
         "Tailwind",
+        "Acernity Ui",
       ],
       github: "https://github.com/gauravdevrani8/Portfolio",
       webapp: "https://portfolio-peach-ten-11.vercel.app/",
+    },
+    {
+      id: 7,
+      title: "BikeBuddy",
+      date: "june 2024 - june 2024, 3days" ,
+      description:"Bike Rental Website",
+      image:
+      "https://github.com/gauravdevrani8/Bike-Buddy/assets/151192508/b68a1fab-1d20-467c-8942-642873d5676a",
+      
+      tags: [
+        "React",
+        "Scss",
+      ],
+      github: "https://github.com/gauravdevrani8/Bike-Buddy",
+      webapp: "https://bike-buddy.vercel.app/",
     },
 
   ];

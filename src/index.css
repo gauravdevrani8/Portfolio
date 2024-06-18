@@ -37,11 +37,7 @@ body {
   animation: rubber-band 1s ease-in-out;
 }
 
-.shine-text {
-  @apply bg-gradient-to-r from-[#a483ff] opacity-100 to-blue-400 via-white bg-clip-text text-transparent;
-  background-size: 80px;
-  animation: zezzz 2s infinite;
-}
+
 
 @keyframes zezzz {
   0% {
