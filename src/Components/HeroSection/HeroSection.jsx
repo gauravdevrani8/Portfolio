@@ -2,9 +2,9 @@ import React from 'react';
 import { Bio } from '../../Data/Data';
 import { Typewriter } from 'react-simple-typewriter';
 import Lottie from 'lottie-react';
-import lottieAnimation from '../../assets/Animation.json'; // Ensure the path is correct
+import lottieAnimation from '../../assets/Animation.json'; 
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
-import resume from '../../Data/Resume.pdf'; // Correct the import statement
+import resume from '../../Data/Resume.pdf'; 
 import { MdFileDownload } from "react-icons/md";
 
 const HeroSection = () => {
