@@ -18,11 +18,11 @@ export const Bio = {
   // skills
   import React from 'react';
 import { AiOutlineHtml5 } from "react-icons/ai";
-import { FaCss3Alt, FaReact, FaTools } from "react-icons/fa"; // Using FaTools as a generic icon for GSAP
+import { FaCss3Alt, FaReact, FaTools, FaSass } from "react-icons/fa"; // Using FaTools as a generic icon for GSAP
 import { IoLogoJavascript } from "react-icons/io";
 import { SiRedux, SiGit, SiTailwindcss } from "react-icons/si";
 // Additional imports
-import { SiFirebase, SiFigma, SiWebpack, SiMongodb } from "react-icons/si";
+import { SiFirebase, SiFigma, SiBootstrap, SiMongodb } from "react-icons/si";
 
   
    export const skills = [
@@ -65,12 +65,12 @@ import { SiFirebase, SiFigma, SiWebpack, SiMongodb } from "react-icons/si";
       icon: <SiFigma />,
     },
     {
-      title: 'Webpack',
-      icon: <SiWebpack className='hover:animate-spin'/>,
+      title: 'Bootstrap',
+      icon: <SiBootstrap className='hover:animate-spin'/>,
     },
     {
-      title: 'MongoDB',
-      icon: <SiMongodb className='animate-bounce'/>,
+      title: 'Sass',
+      icon: <FaSass className='animate-bounce'/>,
     },
     {
       title: 'GSAP',
