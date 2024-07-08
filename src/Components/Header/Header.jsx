@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <>
-      <header className=" bg-black fixed top-0 left-0 w-[100%] z-50 backdrop-blur-md  shadow-md text-gray-50">
+      <header className=" fixed top-0 left-0 w-[100%] z-50 backdrop-blur-md  shadow-md text-gray-50">
         <nav className="container mx-auto px-4 md:px-28 py-3 md:py-4 flex justify-between items-center">
           <div className="text-2xl font-bold flex items-center">
             <h1 className="text-start font-satisfy ">Gaurav <span className="text-green-400 ">Devrani</span></h1>

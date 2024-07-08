@@ -96,7 +96,7 @@ import { SiFirebase, SiFigma, SiBootstrap, SiMongodb } from "react-icons/si";
       date: "April 2024 - May 2024",
       description:"e-commerce platform fro shopping ",
       image:
-      "https://github.com/gauravdevrani8/LuxeLoom-e-commerce-website/assets/151192508/71d24f3a-2237-420b-b712-681167ade6d0",
+      "https://i.ibb.co/tK2hFky/Screenshot-2024-07-08-154347.png",
       
       tags: [
         "React",
@@ -113,7 +113,7 @@ import { SiFirebase, SiFigma, SiBootstrap, SiMongodb } from "react-icons/si";
       date: "May 2024 - May 2024, 3days" ,
       description:"Explore my personal portfolio, a curated showcase of my diverse range of projects",
       image:
-      "https://github.com/gauravdevrani8/LuxeLoom-e-commerce-website/assets/151192508/662897c5-bfac-448d-a7a1-4bd94c690cbd",
+      "https://i.ibb.co/Pm9hPLW/Screenshot-2024-07-08-154258.png",
       
       tags: [
         "React",
@@ -121,7 +121,7 @@ import { SiFirebase, SiFigma, SiBootstrap, SiMongodb } from "react-icons/si";
         "Acernity Ui",
       ],
       github: "https://github.com/gauravdevrani8/Portfolio",
-      webapp: "https://portfolio-peach-ten-11.vercel.app/",
+      webapp: "https://portfolio-gauravdevrani8s-projects.vercel.app/",
     },
     {
       id: 7,
@@ -139,5 +139,35 @@ import { SiFirebase, SiFigma, SiBootstrap, SiMongodb } from "react-icons/si";
       webapp: "https://bike-buddy.vercel.app/",
     },
 
+    {
+      id: 8,
+      title: "Intelligennie",
+      date: "july 2024 - july 2024, 1day" ,
+      description:"ChatBot",
+      image:
+      "https://i.ibb.co/7KdRpQ3/Screenshot-2024-07-08-154756.png",
+      
+      tags: [
+        "React",
+        "Tailwind CSS",
+        "Google Gemini API",
+      ],
+      github: "https://github.com/gauravdevrani8/Intelligenie",
+      webapp: "https://intelligenie-ten.vercel.app/",
+    },
+     { id: 8,
+      title: "GuestHouse UI",
+      date: "july 2024 - july 2024, 1day" ,
+      description:"UI",
+      image:
+      "https://i.ibb.co/sqnqpqz/Screenshot-2024-07-08-173246.png",
+      
+      tags: [
+        "React",
+        "Tailwind CSS",
+      ],
+      github: "https://github.com/gauravdevrani8/GuestHouse",
+      webapp: "https://guest-house1-five.vercel.app/",
+    },
   ];
   
