@@ -13,11 +13,7 @@ import backgroundVideo from './assets/background8.mp4';
 
 const App = () => {
   return (
-    <div className=''>
-      <video autoPlay loop muted className="fixed z-[-1] object-cover w-full h-full">
-        <source src={backgroundVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+    <div className='bg-[#121316]'>
       <Router>
         <Header />
         <Routes>
