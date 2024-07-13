@@ -1,11 +1,13 @@
 import React from 'react';
 import contactImg from '../../assets/contact.svg';
+import Spline from '@splinetool/react-spline';
+
 
 const Contact = () => {
   return (
     <div className="min-h-screen flex flex-col md:flex-row lg:gap-24 items-center justify-center py-6">
       <div className="w-full md:w-1/2 flex justify-center mb-6 md:mb-0">
-        <img src={contactImg} alt="Contact Us" className="w-80 md:w-auto h-64 md:h-96" />
+      <Spline scene="https://prod.spline.design/P3ulcdBnoZXHrJ3A/scene.splinecode" />
       </div>
       
       <div className="w-full max-w-md px-4">

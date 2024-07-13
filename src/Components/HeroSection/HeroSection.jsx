@@ -51,9 +51,7 @@ const HeroSection = () => {
 
       {/* Right Side Spline Animation */}
       <div className="relative md:w-1/2 h-full flex justify-center items-center z-10">
-      <Spline
-        scene="https://prod.spline.design/pJcfqg2Rz-MVLWpT/scene.splinecode" 
-      />
+      <Spline scene="https://prod.spline.design/pJcfqg2Rz-MVLWpT/scene.splinecode" />
       </div>
     </div>
   );
