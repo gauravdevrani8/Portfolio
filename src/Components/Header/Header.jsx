@@ -68,7 +68,7 @@ const Header = () => {
 
           {/* Contact Button for Large Screens */}
           <Link to="/contact" className="hidden md:block">
-            <button className="border hover:bg-green-300 hover:text-black transition duration-300 font-poppins text-white py-2 px-6">
+            <button className="border hover:bg-[#368075]  transition duration-300 rounded-full font-poppins text-white py-2 px-6">
               Contact
             </button>
           </Link>
