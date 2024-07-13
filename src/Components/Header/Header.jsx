@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { PiBracketsCurlyLight } from "react-icons/pi";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +15,8 @@ const Header = () => {
       <header className=" fixed top-0 left-0 w-[100%] z-50 backdrop-blur-md  shadow-md text-gray-50">
         <nav className="container mx-auto px-4 md:px-28 py-3 md:py-4 flex justify-between items-center">
           <div className="text-2xl font-bold flex items-center">
-            <h1 className="text-start font-satisfy ">Gaurav <span className="text-green-400 ">Devrani</span></h1>
+            <h1 className="text-start  "> <span className=" text-3xl text-green-400 "><PiBracketsCurlyLight />
+            </span></h1>
           </div>
 
           {/* Hamburger Icon for Mobile */}

@@ -11,12 +11,12 @@ const HeroSection = () => {
     <div className="relative flex flex-col md:flex-row text-white items-center h-[93vh] px-10 py-10 md:py-0">
       {/* Left Side Content */}
       <div className="relative md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left space-y-6 z-20">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          Hi, I'm <span className="text-[#FFBE98]">{Bio.name}</span>
+        <h1 className="text-4xl  md:text-8xl font-semibold mb-4">
+          <span className='font-satisfy'>Hi, I'm </span> <span className="font-satisfy text-[#368075]">{Bio.name}</span>
         </h1>
-        <h2 className="text-xl md:text-2xl font-light mb-8">
+        <h2 className="text-xl md:text-2xl font-semibold font-syncopate mb-8">
           A{' '}
-          <span className="text-indigo-500 font-bold text-3xl">
+          <span className="text-[#9c71f8]  text-3xl">
             <Typewriter
               words={Bio.roles}
               loop={Infinity}
