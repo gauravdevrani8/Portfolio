@@ -6,7 +6,7 @@ import Spline from '@splinetool/react-spline';
 const Contact = () => {
   return (
     <div className="min-h-screen flex flex-col md:flex-row lg:gap-24 items-center justify-center py-6">
-      <div className="w-full md:w-1/2 flex justify-center mb-6 md:mb-0">
+      <div className="w-full md:w-1/2 flex h-64 md:h-auto justify-center mb-6 md:mb-0">
       <Spline scene="https://prod.spline.design/Xf88RsRILsyEanwB/scene.splinecode" />
       </div>
       

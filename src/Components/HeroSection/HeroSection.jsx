@@ -8,7 +8,7 @@ import { MdFileDownload } from "react-icons/md";
 
 const HeroSection = () => {
   return (
-    <div className="relative flex flex-col md:flex-row text-white items-center h-[93vh] px-10 py-10 md:py-0">
+    <div className="relative flex flex-col md:flex-row text-white items-center md:h-[93vh] h-fit px-10 py-10 md:py-0">
       {/* Left Side Content */}
       <div className="relative md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left space-y-6 z-20">
         <h1 className="text-4xl  md:text-8xl font-semibold mb-4">
@@ -49,8 +49,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Right Side Spline Animation */}
-      <div className="relative md:w-1/2 h-full flex justify-center items-center z-10">
+      <div className="relative md:w-1/2 md:h-full h-96 p=6 w-screen md:p-0 flex justify-center items-center z-10">
       <Spline scene="https://prod.spline.design/pJcfqg2Rz-MVLWpT/scene.splinecode" />
       </div>
     </div>
