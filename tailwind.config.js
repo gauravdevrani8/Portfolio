@@ -10,6 +10,8 @@ module.exports = {
         satisfy: ['Satisfy', 'sans-serif'],
         bungeeshade: ['Bungee Shade', 'sans-serif'],
         syncopate: ['Syncopate', 'sans-serif'],
+        dmserifdisplay: ['DM Serif Display', 'sans-serif'],
+        rajdhani: ['Rajdhani', 'sans-serif'],
       },
     },
   },

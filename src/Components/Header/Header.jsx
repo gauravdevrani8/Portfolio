@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md text-gray-50">
+      <header className=" top-0 left-0 w-full z-50 font-rajdhani backdrop-blur-md text-gray-50">
         <nav className="container mx-auto px-4 md:px-28 py-3 md:py-4 flex justify-between items-center">
           <div className="text-2xl font-bold flex items-center">
             <h1 className="text-start">
@@ -84,7 +84,7 @@ const Header = () => {
 
           {/* Contact Button for Large Screens */}
           <Link to="/contact" className="hidden md:block">
-            <button className="bg-[#368075] transition duration-300 rounded-full font-poppins text-white py-2 px-6">
+            <button className="border-2 border-gray-600 transition duration-300 rounded-full text-white py-2 px-6">
               Contact
             </button>
           </Link>
