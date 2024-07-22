@@ -29,15 +29,18 @@ const Projects = () => {
 
   return (
     <section className="py-16 px-4 md:px-12 lg:px-36 text-white">
-      <div className="container mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center font-satisfy underline -rotate-3">
-          Pro <span className='text-green-300'>jects</span>
-        </h2>
+      <div className="container text-center mx-auto">
+      <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center font-satisfy relative inline-block text-gray-800">
+  <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600">
+    PROJECTS
+  </span>
+  <div className="absolute inset-0 w-full h-full border border-gray-300 rounded-lg -z-10 transform rotate-2"></div>
+</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-12">
           {projects.map((project) => (
             <div 
               key={project.id} 
-              className="relative p-6 lg:p-2 font-syncopate rounded-xl bg-[#1b1c202e] shadow-xl border border-gray-400 transition-all duration-300 project-card"
+              className="relative p-6 lg:p-2 font-syncopate rounded-xl bg-[#1b1c202e] shadow-xl  transition-all duration-300 project-card"
             >
               <img 
                 src={project.image} 

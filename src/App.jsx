@@ -11,7 +11,7 @@ import Footer from './Components/Footer/Footer';
 const App = () => {
 
   return (
-    <div className='relative px-20 bg-[#000000]'>
+    <div className='relative bg-[#000000]'>
           <Router>
             <Header />
             <Routes>

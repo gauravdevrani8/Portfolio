@@ -8,14 +8,14 @@ import { MdFileDownload } from "react-icons/md";
 
 const HeroSection = () => {
   return (<>
-    <div className="relative flex flex-col justify-between md:flex-row text-white items-center md:h-[93vh] h-fit py-10 md:py-0 overflow-hidden">
-      <div className="relative md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left space-y-6 z-20">
-        <h1 className="text-4xlfont-semibold font-rajdhani md:text-7xl mb-4">
+    <div className="relative border-b border-gray-600 flex flex-col justify-between md:flex-row text-white items-center md:h-[93vh] h-fit md:py-0 overflow-hidden">
+      <div className="relative md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left  z-20">
+        <h1 className="text-4xl font-rajdhani md:text-7xl mb-4">
           Hi, I'm {Bio.name}
         </h1>
-        <h2 className="text-xl md:text-2xl font-semibol mb-8">
+        <h2 className="text-xl  shine-text md:text-2xl font-semibol mb-8">
           {' '}
-          <span className="text-[#000000] py-1 px-24 bg-[#79df79c9] font-rajdhani text-3xl">
+          <span className=" py-1 font-rajdhani text-3xl md:text-5xl">
             <Typewriter
               words={Bio.roles}
               loop={Infinity}
@@ -27,14 +27,14 @@ const HeroSection = () => {
             />
           </span>
         </h2>
-        <p className="text-lg md:text-xl font-rajdhani text-gray-300 max-w-md">
+        <p className="text-lg md:text-xl mb-5 font-rajdhani text-gray-300 max-w-md">
           {Bio.description}
         </p>
         <a href={resume} download="resume.pdf">
   <button className="button s-button border rounded-full flex items-center border-gray-600 text-white hover:text-white hover:scale-95 transition-transform duration-300 ease-in-out py-2 px-4">
     Download Resume
     <span className='border-gray-600 border-2 rounded-full p-2 ml-2 transition-colors duration-300 ease-in-out group-hover:bg-green-500'>
-      <MdFileDownload className='text-2xl' />
+      <MdFileDownload className='animate-bounce text-2xl' />
     </span>
   </button>
 </a>        <div className="flex space-x-4 mt-4">
@@ -50,7 +50,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <Spline scene="https://prod.spline.design/vFYJu5xPNbSh9g2z/scene.splinecode" />
+      <Spline scene="https://prod.spline.design/uFcl6YViSiePvDII/scene.splinecode" />
       </div>
     </>
   );

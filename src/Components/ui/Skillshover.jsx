@@ -32,7 +32,7 @@ export const HoverEffect = ({ items, className }) => {
             )}
           </AnimatePresence>
           <Card>
-            <CardTitle>{item.icon}</CardTitle>
+            <CardTitle className='text-4xl md:text-6xl'>{item.icon}</CardTitle>
             <CardDescription>{item.title}</CardDescription>
 
           </Card>
@@ -46,12 +46,12 @@ export const Card = ({ className, children }) => {
   return (
     <div
       className={cn(
-        "rounded-2xl h-fit w-auto text-center p-4 overflow-hidden  bg-[#000000] border border-transparent dark:border-white/[0.2] group-hover:border-slate-800 relative z-20",
+        "rounded-2xl h-fit w-auto text-center overflow-hidden  bg-[#000000] border border-transparent dark:border-white/[0.2] group-hover:border-slate-800 relative z-20",
         className
       )}
     >
       <div className="relative z-50">
-        <div className="p-4">{children}</div>
+        <div className="p-7">{children}</div>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import Lottie from 'lottie-react';
 import { education } from '../../Data/Data';
 const About = () => {
   return (
-    <div className="min-h-96 flex flex-col md:flex-row pt-16 justify-between items-center bg-transparent text-white">
+    <div className="min-h-96 border-b border-gray-600 flex flex-col md:flex-row pt-16 justify-between items-center bg-transparent text-white">
       <div className="w-full md:w-1/2 hidden md:flex justify-center items-center mb-8 md:mb-0">
         <Lottie animationData={Animation} className="w-80 h-80 md:w-[60vw] md:h-[60vh]" />
       </div>

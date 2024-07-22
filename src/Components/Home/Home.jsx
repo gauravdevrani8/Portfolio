@@ -9,9 +9,11 @@ import HeroSection from '../HeroSection/HeroSection'
 const Home = () => {
   return (<>
   
-<div className='bg-black'></div>
+<div className='bg-black p-5'>
     <HeroSection/>
       <About/>
+      </div>
+
       <Skills/>
       <Projects/>
       <Contact/>
