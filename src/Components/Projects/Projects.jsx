@@ -8,7 +8,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
   useEffect(() => {
-    // GSAP animation with ScrollTrigger
     gsap.fromTo(
       '.project-card',
       { opacity: 0, y: 30 },
@@ -17,12 +16,12 @@ const Projects = () => {
         y: 0,
         duration: 0.6,
         ease: 'power3.out',
-        stagger: 0.2, // Stagger the animation by 0.2 seconds
+        stagger: 0.2, 
         scrollTrigger: {
           trigger: '.project-card',
-          start: 'top bottom-=100px', // Trigger animation when the top of the card is 100px above the bottom of the viewport
+          start: 'top bottom-=100px', 
           end: 'bottom top',
-          toggleActions: 'play none none reverse' // Play animation when entering the viewport and reverse when leaving
+          toggleActions: 'play none none reverse' 
         }
       }
     );
