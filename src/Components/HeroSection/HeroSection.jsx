@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Suspense, lazy } from 'react';
+import React, { Suspense, lazy } from 'react';
 import { Bio } from '../../Data/Data';
 import { Typewriter } from 'react-simple-typewriter';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
@@ -9,12 +9,6 @@ import { TailSpin } from 'react-loader-spinner'; // Example spinner
 const Spline = lazy(() => import('@splinetool/react-spline'));
 
 const HeroSection = () => {
-  const [isLoading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setLoading(false); // Set loading to false once the component mounts
-  }, []);
-
   return (
     <div className="relative border-b border-gray-600 flex flex-col justify-between md:flex-row text-white items-center md:h-[93vh] h-fit md:py-0 overflow-hidden">
       <div className="relative md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left z-20">
@@ -59,15 +53,9 @@ const HeroSection = () => {
       </div>
 
       <div id="spline-section" className="md:w-1/2 w-full h-full">
-        {isLoading ? (
-          <div className="flex justify-center items-center h-full">
-            <TailSpin color="#00BFFF" height={80} width={80} />
-          </div>
-        ) : (
-          <Suspense fallback={<div>Loading...</div>}>
-            <Spline scene="https://prod.spline.design/uFcl6YViSiePvDII/scene.splinecode" />
-          </Suspense>
-        )}
+        <Suspense fallback={<div className="flex justify-center items-center h-full"><TailSpin color="#00BFFF" height={80} width={80} /></div>}>
+          <Spline scene="https://prod.spline.design/uFcl6YViSiePvDII/scene.splinecode" />
+        </Suspense>
       </div>
     </div>
   );
