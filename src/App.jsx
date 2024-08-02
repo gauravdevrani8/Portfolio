@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
@@ -7,22 +7,26 @@ import Projects from './Components/Projects/Projects';
 import Contact from './Components/Contacts/Contacts';
 import About from './Components/About/About';
 import Footer from './Components/Footer/Footer';
-import './App.css'; 
-import bgVideo from './assets/bg3.mp4'; // Adjust the path as needed
+import './App.css';
+import LocomotiveScroll from 'locomotive-scroll';
+import 'locomotive-scroll/src/locomotive-scroll.scss'; // Import Locomotive Scroll styles
 
 const App = () => {
+  useEffect(() => {
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true,
+    });
+
+    // Cleanup on unmount
+    return () => {
+      scroll.destroy();
+    };
+  }, []);
 
   return (
-    <div className="relative overflow-hidden">
-      <video
-        className="absolute inset-0 w-full h-full object-cover z-0"
-        src={bgVideo}
-        type="video/mp4"
-        autoPlay
-        loop
-        muted
-      />
-      <div className="relative  z-10">
+    <div className="relative bg-black overflow-hidden" data-scroll-container>
+      <div className="relative z-10">
         <Router>
           <Header />
           <Routes>

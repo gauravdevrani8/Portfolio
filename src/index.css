@@ -4,8 +4,16 @@
 
 
 
+/* App.css */
+html,
 body {
-  font-family: 'poppins', sans-serif;
+  height: 100%;
+  overflow: hidden; /* Prevent default scroll */
+}
+
+[data-scroll-container] {
+  height: 100%;
+  overflow: hidden; /* Hide default scroll */
 }
 .shine-text {
   @apply bg-gradient-to-r from-[#201658] opacity-100 to-blue-500 via-orange-600 bg-clip-text text-transparent;

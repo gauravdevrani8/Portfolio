@@ -11,12 +11,14 @@ const HeroSection = () => {
   const nameRef = useRef(null);
   const roleRef = useRef(null);
   const descriptionRef = useRef(null);
+  const resumeRef = useRef(null);
+  const socialIconsRef = useRef(null);
 
   useEffect(() => {
     gsap.fromTo(
       nameRef.current,
-      { opacity: 0, scale: 1.5 },
-      { opacity: 1, scale: 1, duration: 1.5, ease: "power3.out" }
+      { opacity: 0, y: 50 }, // Same start position as descriptionRef
+      { opacity: 1, y: 0, duration: 1.5, ease: "power3.out" } // Same duration and ease as descriptionRef
     );
     gsap.fromTo(
       roleRef.current,
@@ -28,24 +30,34 @@ const HeroSection = () => {
       { opacity: 0, scale: 1.5 },
       { opacity: 1, scale: 1, duration: 1.5, delay: 0.6, ease: "power3.out" }
     );
+    gsap.fromTo(
+      resumeRef.current,
+      { opacity: 0, y: 50 },
+      { opacity: 1, y: 0, duration: 1.5, delay: 0.9, ease: "power3.out" }
+    );
+    gsap.fromTo(
+      socialIconsRef.current,
+      { opacity: 0, y: 50 },
+      { opacity: 1, y: 0, duration: 1.5, delay: 1.2, ease: "power3.out" }
+    );
   }, []);
 
   return (
     <div
-      className="relative bg-black flex flex-col justify-center items-center text-white h-screen overflow-hidden"
+      className="relative bg-black flex flex-col justify-start md:justify-center items-center text-white h-screen overflow-hidden"
       style={{ backgroundImage: `url(${bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
-      <div className="absolute inset-0 bg-black opacity-20 z-10"></div>
-      <div className="relative z-20 text-center px-4 md:px-8">
+      <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
+      <div className="relative z-20 text-center px-4 md:px-8 mt-8 md:mt-0">
         <h1
           ref={nameRef}
-          className="text-5xl font-extrabold md:text-7xl mb-4 bg-clip-text text-transparent bg-gradient-to-r from-gray-400 via-white to-gray-500"
+          className="text-4xl font-extrabold md:text-7xl mb-4 bg-clip-text text-transparent bg-gradient-to-r from-gray-400 via-white to-gray-500"
         >
           Hi, I'm {Bio.name}
         </h1>
         <h2
           ref={roleRef}
-          className="text-2xl md:text-4xl font-semibold mb-8"
+          className="text-3xl md:text-4xl font-semibold mb-8"
         >
           <span className="py-1 shine-text">
             <Typewriter
@@ -65,7 +77,7 @@ const HeroSection = () => {
         >
           {Bio.description}
         </p>
-        <a href={resume} download="resume.pdf">
+        <a ref={resumeRef} href={resume} download="resume.pdf">
           <button className="flex items-center justify-center py-3 px-6 mx-auto border border-gray-600 rounded-full text-white bg-transparent hover:scale-105 transform transition-transform duration-300 ease-in-out">
             Download Resume
             <span className='ml-3 border border-gray-600 rounded-full p-2 transition-colors duration-300 ease-in-out group-hover:bg-green-500'>
@@ -73,7 +85,7 @@ const HeroSection = () => {
             </span>
           </button>
         </a>
-        <div className="flex justify-center space-x-6 mt-6">
+        <div ref={socialIconsRef} className="flex justify-center space-x-6 mt-6">
           <a href="https://www.linkedin.com/in/gauravdevrani/" target="_blank" rel="noopener noreferrer" className="text-3xl text-gray-300 hover:text-white transition duration-300">
             <FaLinkedin />
           </a>
