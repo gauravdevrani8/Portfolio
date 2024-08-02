@@ -4,11 +4,11 @@ import Lottie from 'lottie-react';
 import { education } from '../../Data/Data';
 const About = () => {
   return (
-    <div className="min-h-96 flex flex-col md:flex-row pt-16 justify-between items-center bg-black text-white">
-      <div className="w-full md:w-1/2 flex justify-center items-center mb-8 md:mb-0">
+    <div className="min-h-96 px-5 md:px-0 flex flex-col md:flex-row md:pt-16 justify-between items-center bg-black text-white">
+      <div className="w-full md:w-1/2 flex justify-center items-center mb-2 md:mb-0">
         <Lottie animationData={Animation} className="w-80 h-80 md:w-[60vw] md:h-[60vh]" />
       </div>
-      <div className="w-full md:w-1/2 max-w-3xl py-8 md:pl-10 space-y-6">
+      <div className="w-full md:w-1/2 max-w-3xl md:py-8 md:pl-10 space-y-6">
         <h1 className="text-4xl font-bold  mb-4 ">About <span className='text-[#FFBE98]'>Me</span></h1>
         <p className="text-lg leading-relaxed">
           I'm a frontend developer skilled in crafting responsive design, ensuring seamless experiences across all devices and optimized websites.

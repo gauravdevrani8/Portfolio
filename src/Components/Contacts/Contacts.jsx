@@ -10,15 +10,15 @@ const Contact = () => {
       
       <div className="w-full max-w-3xl px-4">
         <form
-          className="bg-transparent shadow-lg px-12 pt-8 pb-12 mb-4"
+          className="bg-transparent shadow-lg px-6 md:px-12 pt-8 pb-12 mb-4"
           action="https://formspree.io/f/mdoqregy"
           method="POST"
         >
-      <h2 className="text-3xl md:text-4xl font-poppins font-extrabold mb-12 relative">
-        <span className="relative inline-block bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-gray-600">
-          CONTACT US
-        </span>
-      </h2>
+          <h2 className="text-3xl md:text-4xl font-poppins font-extrabold mb-12 relative text-center md:text-left">
+            <span className="relative inline-block bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-gray-600">
+              CONTACT US
+            </span>
+          </h2>
           <div className="mb-6">
             <label
               htmlFor="username"
@@ -67,7 +67,7 @@ const Contact = () => {
               rows="1"
             ></textarea>
           </div>
-          <div className="flex items-center justify-end">
+          <div className="flex items-center justify-center md:justify-end">
             <button
               type="submit"
               className="border border-gray-700 rounded-full hover:scale-95 transition-transform duration-300 text-white font-semibold py-4 px-8 focus:outline-none focus:shadow-outline text-lg"
