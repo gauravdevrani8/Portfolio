@@ -93,7 +93,7 @@ const Header = () => {
         </nav>
       </header>
       {/* Add padding for the header */}
-      <div className="pt-10 md:pt-16"></div>
+      <div className="pt-10 bg-black md:pt-16"></div>
     </>
   );
 };

@@ -9,7 +9,7 @@ import HeroSection from '../HeroSection/HeroSection'
 const Home = () => {
   return (<>
   
-<div className='bg-black p-5'>
+<div className='bg-black'>
     <HeroSection/>
       <About/>
       </div>

@@ -1,17 +1,16 @@
 import React from 'react';
 import { HoverEffect } from '../ui/Skillshover';
 import { skills } from '../../Data/Data';
+
 export default function Skills() {
   return (
-    <div className="bg-transparent border-b border-gray-600 pt-14 text-center mx-auto px-10">
-<h2 className="text-3xl md:text-4xl font-bold mb-12 text-center font-satisfy relative inline-block text-gray-800">
-  <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600">
-    SKILLS
-  </span>
-  <div className="absolute inset-0 w-full h-full border border-gray-300 rounded-lg -z-10 transform rotate-2"></div>
-</h2>
+    <div className=" pt-14 text-center mx-auto px-10 relative">
+      <h2 className="text-3xl md:text-4xl font-poppins font-extrabold mb-12 relative">
+        <span className="relative inline-block bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-gray-600">
+          SKILLS
+        </span>
+      </h2>
       <HoverEffect items={skills} />
-      
     </div>
   );
 }

@@ -10,7 +10,8 @@ body {
 .shine-text {
   @apply bg-gradient-to-r from-[#201658] opacity-100 to-blue-500 via-orange-600 bg-clip-text text-transparent;
   background-size: 70px;
-  animation: zezzz 2s infinite;
+  animation: zezzz 8s infinite;
+  font-family: rajdhani;
 }
 
 @keyframes rubber-band {
