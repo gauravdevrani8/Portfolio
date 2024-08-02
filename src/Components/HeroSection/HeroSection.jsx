@@ -44,7 +44,7 @@ const HeroSection = () => {
 
   return (
     <div
-      className="relative bg-black flex flex-col justify-start md:justify-center items-center text-white h-screen overflow-hidden"
+      className="relative mt-8 md:mt-0 bg-black flex flex-col justify-start md:justify-center items-center text-white h-screen overflow-hidden"
       style={{ backgroundImage: `url(${bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
       <div className="absolute inset-0 bg-black opacity-60 z-10"></div>

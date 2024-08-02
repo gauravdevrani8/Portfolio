@@ -8,21 +8,8 @@ import Contact from './Components/Contacts/Contacts';
 import About from './Components/About/About';
 import Footer from './Components/Footer/Footer';
 import './App.css';
-import LocomotiveScroll from 'locomotive-scroll';
-import 'locomotive-scroll/src/locomotive-scroll.scss'; // Import Locomotive Scroll styles
 
 const App = () => {
-  useEffect(() => {
-    const scroll = new LocomotiveScroll({
-      el: document.querySelector('[data-scroll-container]'),
-      smooth: true,
-    });
-
-    // Cleanup on unmount
-    return () => {
-      scroll.destroy();
-    };
-  }, []);
 
   return (
     <div className="relative bg-black overflow-hidden" data-scroll-container>
