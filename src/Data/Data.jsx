@@ -17,15 +17,14 @@ export const Bio = {
 
   // skills
   import React from 'react';
-import { AiOutlineHtml5 } from "react-icons/ai";
-import { FaCss3Alt, FaReact, FaTools, FaSass } from "react-icons/fa"; // Using FaTools as a generic icon for GSAP
-import { IoLogoJavascript } from "react-icons/io";
-import { SiRedux, SiGit, SiTailwindcss } from "react-icons/si";
-// Additional imports
-import { SiFirebase, SiFigma, SiBootstrap, SiMongodb } from "react-icons/si";
-
+  import { AiOutlineHtml5 } from "react-icons/ai";
+  import { FaCss3Alt, FaReact, FaTools, FaSass } from "react-icons/fa";
+  import { IoLogoJavascript } from "react-icons/io";
+  import { SiRedux, SiGit, SiTailwindcss, SiFirebase, SiFigma, SiBootstrap, SiMongodb, SiFramer } from "react-icons/si";
+  // Importing the Material UI icon from @mui/icons-material
+  import { SiMaterialdesign } from "react-icons/si";
   
-   export const skills = [
+  export const skills = [
     {
       title: 'React',
       icon: <FaReact className='animate-spin hover:animate-none'/>,
@@ -42,7 +41,6 @@ import { SiFirebase, SiFigma, SiBootstrap, SiMongodb } from "react-icons/si";
       title: 'Redux',
       icon: <SiRedux className='hover:animate-spin'/>,
     },
-
     {
       title: 'JavaScript',
       icon: <IoLogoJavascript className='animate-pulse'/>,
@@ -55,7 +53,6 @@ import { SiFirebase, SiFigma, SiBootstrap, SiMongodb } from "react-icons/si";
       title: 'GitHub',
       icon: <SiGit className='hover:scale-125 hover:duration-700'/>,
     },
-    // Additional skills
     {
       title: 'Firebase',
       icon: <SiFirebase className='hover:animate-ping'/>,
@@ -76,8 +73,24 @@ import { SiFirebase, SiFigma, SiBootstrap, SiMongodb } from "react-icons/si";
       title: 'GSAP',
       icon: <FaTools />, // Using FaTools as a generic icon for GSAP
     },
-   ];
-  
+    {
+      title: 'MongoDB',
+      icon: <SiMongodb className='hover:animate-pulse'/>,
+    },
+    {
+      title: 'Material UI',
+      icon: <SiMaterialdesign className='hover:scale-110 hover:duration-500'/>,
+    },
+    {
+      title: 'Fluent UI',
+      icon: <FaTools />, // Using FaTools as a placeholder for Fluent UI
+    },
+    {
+      title: 'Framer Motion',
+      icon: <SiFramer className='hover:animate-bounce'/>,
+    },
+  ];
+    
   // education
   export const education = [
     {
