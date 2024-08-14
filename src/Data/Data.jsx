@@ -14,6 +14,7 @@ export const Bio = {
     linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
     twitter: "https://twitter.com/RishavChanda"
   };
+  
 
   // skills
   import React from 'react';
@@ -136,21 +137,6 @@ export const Bio = {
       github: "https://github.com/gauravdevrani8/Portfolio",
       webapp: "https://portfolio-gauravdevrani8s-projects.vercel.app/",
     },
-    {
-      id: 7,
-      title: "BikeBuddy",
-      date: "june 2024 - june 2024, 3days" ,
-      description:"Bike Rental Website",
-      image:
-      "https://github.com/gauravdevrani8/Bike-Buddy/assets/151192508/b68a1fab-1d20-467c-8942-642873d5676a",
-      
-      tags: [
-        "React",
-        "Scss",
-      ],
-      github: "https://github.com/gauravdevrani8/Bike-Buddy",
-      webapp: "https://bike-buddy.vercel.app/",
-    },
 
     {
       id: 8,
@@ -165,8 +151,8 @@ export const Bio = {
         "Tailwind CSS",
         "Google Gemini API",
       ],
-      github: "https://github.com/gauravdevrani8/Intelligenie",
-      webapp: "https://intelligenie-ten.vercel.app/",
+      github: "https://github.com/gauravdevrani8/Intelligennie",
+      webapp: "https://intelligennie.vercel.app/",
     },
      { id: 8,
       title: "GuestHouse UI",
